@@ -37,7 +37,7 @@ export default function ProductDetails({ params }: { params: Params }) {
             {alert ? <div className="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
                 <p className="font-bold text-center">Added to the Cart</p>
             </div> : ''}
-            <div className="md:flex items-start justify-center py-12 2xl:px-20 md:px-6 px-4 bg-gray-200 h-full">
+            <div className="md:flex items-start justify-center py-12 2xl:px-20 md:px-6 px-4 bg-gray-200 md:h-screen sm:h-full">
                 <div className="xl:w-2/6 lg:w-2/5 w-80 ">
                     <Image className="w-full" alt="Product image" src={data.image} width={700} height={100} />
                 </div>
