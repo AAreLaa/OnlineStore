@@ -9,12 +9,7 @@ export const getAllProducts = async () => {
   return response.data;
 };
 
-export const getCategory = async () => {
-  const response = await instance.get("/products/categories");
-  return response.data;
-};
-
-export const getSingleProduct = async (id?: string) => {
+export const getSingleProduct = async (id: string) => {
   const response = await instance.get(`/products/${id}`);
   return response.data;
 };

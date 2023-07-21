@@ -1,7 +1,7 @@
 'use client'
 
 import { useQuery } from '@tanstack/react-query';
-import wait from '../components/Image/wait.gif'
+import wait from '@/components/Image/wait.gif';
 import Image from 'next/image';
 import ProductCard from '@/components/ProductCard';
 import { getAllProducts } from '@/api/api';
@@ -23,7 +23,7 @@ export default function Home() {
   if (isError) {
     return <span>Error</span>
   }
-console.log(data)
+
   return (
     <div className="container mx-auto antialiased bg-gray-200 text-gray-900 font-sans p-6">
     <div className='flex flex-wrap items-stretch-mx-4'>
@@ -32,6 +32,5 @@ console.log(data)
             })}
     </div>
     </div>
-
   )
 }

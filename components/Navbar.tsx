@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image';
-import cart from '../components/Image/cart.png'
+import cart from '@/components/Image/cart.png'
 
 export default function Navbar() {
     return (
