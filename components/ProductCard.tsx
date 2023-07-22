@@ -9,7 +9,7 @@ export default function ProductCard({ product }: { product: Product }) {
     <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
         <Link href={"/" + product.id} className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden h-full">
         <div className="relative pb-72 overflow-hidden">
-          <Image className="absolute inset-0 h-full w-full object-contain" src={product.image} fill alt=""/>
+          <Image className="absolute inset-0 h-full w-full object-contain" src={product.image} fill sizes='900'  alt=""/>
         </div>
         <div className="p-4">
           <span className="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">Brand New</span>

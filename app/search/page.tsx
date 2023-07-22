@@ -15,6 +15,7 @@ export default function Search() {
     const searchParams = useSearchParams();
     let search = searchParams.toString();
     search = search.slice(0, search.length - 1);
+    search = search.split('+').join(' ');
 
     const { isLoading, isError, data } = useQuery({
         queryKey: ['products'],
