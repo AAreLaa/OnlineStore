@@ -12,6 +12,7 @@ Live Demo [Here](online-store-aarelaa.vercel.app/)
   -  Homepage that lists out the product image, name, price, and description of the products fetched from the api (https://fakestoreapi.com/)
   - Single Product Details page that displays the details of the product of which the product card has been clicked
   - Search page that displays list of products whose title matches with searched text
+  
   c. components folder with the reuseable components and used images
 
   d. types folder with the type of the product, params
